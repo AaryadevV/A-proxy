@@ -19,7 +19,7 @@ function FindProxyForURL(url, host) {
 
   // Route traffic through the proxy if the website is slow
   if (isSlow()) {
-    return "PROXY <your-proxy-address>:<your-proxy-port>";
+    return "Example.com";
   } 
 
   // For other cases, forward traffic directly
