@@ -1,2 +1,2 @@
 # A-proxy
-This Proxy In Development 
+Making a better eduproxy!
