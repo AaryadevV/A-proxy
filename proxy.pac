@@ -3,23 +3,24 @@ function FindProxyForURL(url, host) {
   // Set the threshold for website response time
   var threshold = 1000;
 
-  // Extract the IP address of the requested website
-  var ipAddress = dnsResolve(host);
-
-  // Check if the website is slow based on response time
+  // Function to check if the website is slow based on response time
   var isSlow = function() {
     var start = new Date().getTime();
     var res = (isResolvable(host) && shExpMatch(url, "http*")) ? 
-              FindProxyForURL("http://fake-proxy-to-measure-response-time/", host) : 
+              FindProxyForURL("http://fake-proxy-to-measure-response-time/",host) : 
               "DIRECT";
     var end = new Date().getTime();
     var responseTime = end - start;
     return (responseTime > threshold);
   };
 
-  // Route traffic through the proxy if the website is slow
+  // Check if the website is slow
   if (isSlow()) {
-    return "Example.com";
+    // Display a message before redirecting
+    alert("The website is running slow. Redirecting to Google.com.");
+    
+    // Redirect traffic to Google.com
+    return "PROXY google.com:80";
   } 
 
   // For other cases, forward traffic directly
