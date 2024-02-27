@@ -22,6 +22,17 @@ Key Features:
 
 5. Customization and Extensibility: Customize A-Proxy to meet your specific needs by integrating with existing infrastructure, adding custom rules, or extending functionality with plugins and scripts.
 
+Installation:
+
+To install A-Proxy on your device, follow these steps:
+
+1. Clone the A-Proxy repository from GitHub:
+git clone https://github.com/AaryadevV/A-proxy.git
+
+cd A-proxy
+
+3. Follow the instructions in the README.md file to set up and configure A-Proxy for your environment.
+
 Included Files:
 
 - proxy.pac: Proxy auto-configuration (PAC) file containing proxy settings and routing rules.
@@ -31,7 +42,6 @@ Included Files:
 
 Usage:
 
-1. Install A-Proxy.
-2. Configure proxy settings using the provided administrative console or configuration files.
-3. Deploy A-Proxy in your network environment and start managing proxy settings efficiently.
+Deploy A-Proxy in your network environment and start managing proxy settings efficiently.
+
 
