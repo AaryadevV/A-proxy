@@ -17,7 +17,7 @@ function FindProxyForURL(url, host) {
   // Check if the website is slow
   if (isSlow()) {
     // Display a message before redirecting
-    alert("The website is running slow. Redirecting to Google.com.");
+    alert("You are running at the slowest rate. Redirecting to Google.com.");
     
     // Redirect traffic to Google.com
     return "PROXY google.com:80";
